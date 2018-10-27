@@ -48,9 +48,11 @@
     <div class="row center">
       <div class="col s6">
         Філія № 1
+        <div id="first_map"></div>
       </div>
       <div class="col s6">
         Філія № 2
+        <div id="second_map"></div>
       </div>
     </div>
     </div>
@@ -63,4 +65,25 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+<script>
+function initMap(id, lat, lng, zoom=17) {
+  // The location of Uluru
+  var cordinates = {lat: lat, lng: lng};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById(id), {zoom: zoom, center: cordinates});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: cordinates, map: map});
+}
+
+function initialize(){
+  initMap('first_map', 50.4371674, 30.6158457);
+  initMap('second_map', 50.4149353, 30.5287083);
+
+}
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHgrmza3DvUycbAP1nxQk8jTXWR9o_KlE&callback=initialize">
+    </script>
 </html>

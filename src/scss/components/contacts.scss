@@ -1,0 +1,13 @@
+
+%map-size {
+  height: 400px;
+  width: 100%;
+}
+
+#first_map {
+  @extend %map-size
+}
+
+#second_map {
+  @extend %map-size
+}
