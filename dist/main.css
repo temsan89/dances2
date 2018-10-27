@@ -1,5 +1,7 @@
-.btn {
-  background-color: #d500f9; }
-  .btn:hover {
-    background-color: #9c27b0; }
+.btn:hover {
+  background-color: #c2185b; }
+
+#first_map, #second_map {
+  height: 400px;
+  width: 100%; }
 

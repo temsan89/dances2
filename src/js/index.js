@@ -37,4 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function isDomElement(obj) {
         return obj instanceof Element;
     }
+
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
 });

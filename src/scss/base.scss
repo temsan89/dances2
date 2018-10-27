@@ -1,10 +1,12 @@
 $primary-color: #d500f9;
 $hover-color: #9c27b0;
 
-.btn {
-  background-color: $primary-color;
 
+// main color
+$mainColor: #c92d9f;
+
+.btn {
   &:hover {
-    background-color: $hover-color;
+    background-color: #c2185b;
   }
 }
