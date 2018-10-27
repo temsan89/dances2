@@ -1,10 +1,6 @@
-$primary-color: #d500f9;
-$hover-color: #9c27b0;
-
-.btn {
-  background-color: $primary-color;
-
-  &:hover {
-    background-color: $hover-color;
-  }
-}
+@import "./base";
+@import "components/coaches";
+@import "components/contacts";
+@import "components/header";
+@import "components/rules";
+@import "components/timetable";
