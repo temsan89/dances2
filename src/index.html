@@ -15,11 +15,11 @@
     <div class="section" id="header">
       <div class="row">
         <div class="col s12 center">
-          <a class="btn" href="">Головна</a>
-          <a class="btn" href="">Тренери</a>
-          <a class="btn" href="">Розклад</a>
-          <a class="btn" href="">Правила</a>
-          <a class="btn" href="#contacts">Контакти</a>
+          <a id="mainLink" class="btn js_link" href="/#main">Головна</a>
+          <a id="coachesLink" class="btn js_link" href="/#coaches">Тренери</a>
+          <a id="timetableLink" class="btn js_link" href="/#timetable">Розклад</a>
+          <a id="rulesLink" class="btn js_link" href="/#rules">Правила</a>
+          <a id="contactsLink" class="btn js_link" href="/#contacts">Контакти</a>
         </div>
       </div>
     </div>
@@ -31,7 +31,23 @@
 
     <!-- COACHES -->
     <div class="section" id="coaches">
-
+        <h3 class="coaches__title">Керівники студії</h3>
+        <ul class="coaches__list">
+            <li class="coaches__item">Діюча професійна танцювальная пара</li>
+            <li class="coaches__item">Триразові чемпіони України в категорії "Професіонали Латина"
+                (2016-2018 рр.)
+            </li>
+            <li class="coaches__item">Спортсмени "S" класу (міжнародний клас)</li>
+            <li class="coaches__item">Переможці, призери та фіналісти відкритих чемпіонатів і кубків Польщі,
+                Латвії, Литви, Словаччини, Угорщини, Італії, Франції, Німеччини, Австрії, Голандії, Грузії,
+                Фінляндії, Боснії та Герцеговини, Молдови, Беларусі, Росії
+            </li>
+            <li class="coaches__item">Навчались у кращих танцюристів світу: Ralf Muller & Olga Muller-Omeltchenko
+                (Німеччина), Sergei Surkov & Melia (Росія), Maurizio Vescovo & Andra Vaidalaite (Канада), Martino
+                Zanibellato - Michelle Abildtrup (Данія), Евгений Имреков & Елизавета Дивак (Росія), Виктор
+                Никовский & Лариса Давыдова (Росія), Андрей Просвирнин (Росія)
+            </li>
+        </ul>
     </div>
 
     <!--TIMETABLE-->
@@ -44,17 +60,18 @@
     </div>
 
     <!-- CONTACTS -->
-    <div class="section" id="contacts">
-    <div class="row center">
-      <div class="col s6">
-        Філія № 1
-        <div id="first_map"></div>
-      </div>
-      <div class="col s6">
-        Філія № 2
-        <div id="second_map"></div>
-      </div>
-    </div>
+    <div class="section contacts" id="contacts">
+        <h3 class="contacts__title">Контакти</h3>
+        <div class="row center">
+          <div class="col s6">
+            Філія № 1
+            <div id="first_map"></div>
+          </div>
+          <div class="col s6">
+            Філія № 2
+            <div id="second_map"></div>
+          </div>
+        </div>
     </div>
 
     <!--FOOTER-->
