@@ -1,5 +1,10 @@
-$primary-color: #333;
+$primary-color: #d500f9;
+$hover-color: #9c27b0;
 
-.sample {
+.btn {
   background-color: $primary-color;
+
+  &:hover {
+    background-color: $hover-color;
+  }
 }
