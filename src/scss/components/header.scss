@@ -1,0 +1,100 @@
+.header {
+  &__phone {
+    text-align: center;
+    color: #c92d9f;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__image-block {
+    width: 100%;
+    max-width: 100px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__block {
+    display: flex;
+  }
+}
+
+
+.collage {
+  &__image {
+    width: 100%;
+  }
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#first_map, #second_map {
+  box-shadow: 2px 0px 20px;
+}
+
+.about{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    flex-basis: 45%;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.achievement {
+  &__container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.parallax-container {
+  height: 400px;
+}
+
+.rules {
+  display: flex;
+  &__title {
+    flex-basis: 40%;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 200px;
+    flex-grow: 1;
+  }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    width: 100%;
+  }
+
+}
