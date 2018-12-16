@@ -1,7 +1,5 @@
 import style from "../scss/main.scss"
 
-const arr = [1, 2, 3];
-
 document.addEventListener('DOMContentLoaded', function () {
 
     const buttons = [...document.querySelectorAll('.js_btn')];
@@ -66,7 +64,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var elems = document.querySelectorAll('.materialboxed');
     var instances = M.Materialbox.init(elems);
-
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems);
 });
