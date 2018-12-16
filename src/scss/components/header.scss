@@ -41,10 +41,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  &__title {
-    font-size: 24px;
-    font-weight: 500;
-  }
 }
 
 .advantages {
@@ -55,10 +51,6 @@
   &__item {
     flex-basis: 45%;
   }
-  &__title {
-    font-size: 24px;
-    font-weight: 500;
-  }
 }
 
 .achievement {
@@ -67,34 +59,4 @@
     max-width: 600px;
     margin: 0 auto;
   }
-
-  &__title {
-    font-size: 24px;
-    font-weight: 500;
-  }
-}
-
-.parallax-container {
-  height: 400px;
-}
-
-.rules {
-  display: flex;
-  &__title {
-    flex-basis: 40%;
-  }
-
-  &__item {
-    width: 100%;
-    max-width: 200px;
-    flex-grow: 1;
-  }
-  &__link {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__image {
-    width: 100%;
-  }
-
 }
