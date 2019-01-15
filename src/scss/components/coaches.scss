@@ -1,1 +1,18 @@
+.coaches {
+  &__image {
+    width: 100%;
+  }
 
+  &__image-block {
+    flex-basis: 300px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    max-width: 650px;
+  }
+}
