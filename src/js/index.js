@@ -1,4 +1,5 @@
 import style from "../scss/main.scss"
+import { instagramContent } from "./instagram_api.js"
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -62,6 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return obj instanceof Element;
     }
 
-    var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems);
+    instagramContent();
+
 });
