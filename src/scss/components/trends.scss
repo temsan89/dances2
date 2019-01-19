@@ -23,16 +23,27 @@
   }
 
   &__image-block {
-    width: 100%;
-    margin-right: 50px;
+    width: 210px;
+    min-height: 300px;
+    max-height: 300px;
+    margin: 0 auto 15px auto;
 
     &--1 {
-      max-width: 200px;
+      background-image: url('/img/dance-school-photo.png');
+      background-size: contain;
+      background-repeat: no-repeat
     }
 
-    &--2,
+    &--2 {
+      background-image: url('/img/social-dance-photo.png');
+      background-size: contain;
+      background-repeat: no-repeat
+    }
+
     &--3 {
-      max-width: 185px;
+      background-image: url('/img/dance-sport-photo.png');
+      background-size: contain;
+      background-repeat: no-repeat
     }
   }
 
