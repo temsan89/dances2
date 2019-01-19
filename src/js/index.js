@@ -1,4 +1,5 @@
 import style from "../scss/main.scss"
+import { instagramContent } from "./instagram_api.js"
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -67,6 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let materialboxedElems = document.querySelectorAll('.materialboxed');
     let materialboxedInstances = M.Materialbox.init(materialboxedElems);
+
+    instagramContent();
 
     let sidenavElems = document.querySelectorAll('.sidenav');
     let sidenavInstances = M.Sidenav.init(sidenavElems);
