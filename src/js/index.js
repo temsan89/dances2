@@ -65,4 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     instagramContent();
 
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
 });
