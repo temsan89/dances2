@@ -1,7 +1,7 @@
 .trends {
   &__item {
     margin-bottom: 30px;
-    flex-basis: 260px;
+    flex-basis: 300px;
     margin-right: 20px;
 
     &:last-child {
@@ -9,17 +9,17 @@
     }
   }
 
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 15px;
-  }
-
-  &__items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
   }
 
   &__image-block {
