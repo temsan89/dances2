@@ -66,11 +66,20 @@ document.addEventListener('DOMContentLoaded', function () {
         return obj instanceof Element;
     }
 
-    let materialboxedElems = document.querySelectorAll('.materialboxed');
-    let materialboxedInstances = M.Materialbox.init(materialboxedElems);
-
     instagramContent();
 
-    let sidenavElems = document.querySelectorAll('.sidenav');
-    let sidenavInstances = M.Sidenav.init(sidenavElems);
+    const sidenavElems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenavElems);
+
+    const carouselElems = document.querySelectorAll('.carousel');
+    const carouselProps = {indicators: true,
+                          fullWidth: true}
+    M.Carousel.init(carouselElems, carouselProps)
+
+    carouselElems.forEach(el => {
+      let carouselInstance = M.Carousel.getInstance(el)
+      el.addEventListener('click', function(){
+        carouselInstance.next();
+      });
+    })
 });
