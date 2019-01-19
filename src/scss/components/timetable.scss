@@ -1,0 +1,10 @@
+.timetable {
+  &__img {
+    display: inline-block;
+    width: 35%,
+  }
+  &__coach,
+  &__info  {
+    font-weight: bold;
+  }
+}
