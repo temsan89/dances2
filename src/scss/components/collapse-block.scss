@@ -1,0 +1,22 @@
+.collapsible {
+  width: 100%;
+  border: none;
+
+  &-header {
+    background-color: #880e4f !important;
+    border-bottom: none;
+    //color: #fff;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-body {
+    border-bottom: none;
+  }
+
+  .material-icons {
+    font-size: 32px;
+  }
+}
