@@ -38,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    let collapsibleElems = document.querySelectorAll('.collapsible');
+    let collapsibleInstances = M.Collapsible.init(collapsibleElems);
+
     const links = [...document.querySelectorAll('.js_link')];
 
     links.forEach((link) => {
@@ -63,8 +66,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return obj instanceof Element;
     }
 
+    let materialboxedElems = document.querySelectorAll('.materialboxed');
+    let materialboxedInstances = M.Materialbox.init(materialboxedElems);
+
     instagramContent();
 
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
+    let sidenavElems = document.querySelectorAll('.sidenav');
+    let sidenavInstances = M.Sidenav.init(sidenavElems);
 });
