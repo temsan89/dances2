@@ -36,3 +36,29 @@ body {
   margin-bottom: 50px;
   width: 100%;
 }
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 50px 0;
+  color: #fff;
+  background-color: #0c1b35;
+  font-size: 16px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+
+  &__image {
+    margin-bottom: 20px;
+  }
+}
+
+.carousel {
+  border-radius: 5px;
+}

@@ -14,17 +14,16 @@ const applyContent = data => {
   let htmlContent = "";
   content.forEach(({ image, description }) => {
     htmlContent += `
-    <li>
+    <div class="gallery__image">
       <img class="materialboxed" width="300" src="${image}" data-caption="${description}">
-    </li>
+    </div>
     `;
   });
   instagramMedia.innerHTML = `
   <div>
-   <h3>Галарея</>
-    <ul>
-      ${htmlContent}
-    </ul>
+     <div class="gallery">
+       ${htmlContent}
+     </div>
   </div>
   `;
 

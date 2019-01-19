@@ -3,8 +3,11 @@
     display: inline-block;
     width: 35%
   }
-  &__coach,
-  &__info  {
+
+  &__info {
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
