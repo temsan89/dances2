@@ -8,8 +8,8 @@
     //color: #fff;
     font-size: 28px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
   }
 
   &-body {
@@ -18,5 +18,9 @@
 
   .material-icons {
     font-size: 32px;
+  }
+
+  &__icon {
+    margin-left: 20px;
   }
 }

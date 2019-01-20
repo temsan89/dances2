@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" type="image/png" href="/img/main-logo.jpg">
+    <link rel="apple-touch-icon" sizes="150x150" href="/img/favicons/150x150.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/img/favicons/favicon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <title>Студія спортивного бального танцю Підченка Віталія та Катерини "Academy dance"</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,36 +18,77 @@
 <body>
     <!-- HEADER -->
     <div class="section header" id="header">
-        <div class="row">
-            <div class="col s2">
-                <div class="header__image-block">
-                    <a href="http://academy.com.ua/">
-                        <img src="/img/academy.png" class="header__image">
-                        <div>телефон рецепшна</div>
+        <div class="header__container container">
+            <div class="header__info">
+                <div class="header__school">
+                    <div class="header__image-block">
+                        <a href="http://academy.com.ua/">
+                            <img src="/img/academy.png" class="header__image">
+                        </a>
+                    </div>
+                    <div>вул. Регенераторна, 4в</div>
+                    <div>ЖК "Комфорт Таун"</div>
+                    <div>Академія Сучасної Освіти А+</div>
+                    <div>(044) 364-1-465</div>
+                </div>
+                <div class="header__ukraine-dance">
+                    <a href="http://audsf.com.ua/" target="_blank" class="header__fed-link">
+                        <img src="/img/AUDSF-logo.jpg" class="header__image">
                     </a>
                 </div>
             </div>
-            <div class="col s8">
-                <div class="header__phone">+38-063-332-98-47</div>
-                <div class="row">
-                    <div class="col s12 center">
-                        <a id="mainLink" class="btn pink accent-4 waves-effect waves-light js_link" href="/#main">Головна</a>
-                        <a id="coachesLink" class="btn pink accent-4 waves-effect waves-light js_link" href="/#coaches">Тренери</a>
-                        <a id="timetableLink" class="btn pink accent-4 waves-effect waves-light js_link" href="/#timetable">Розклад</a>
-                        <!--<a id="rulesLink" class="btn pink accent-4 waves-effect waves-light js_link" href="/#rules">Правила</a>-->
-                        <a id="contactsLink" class="btn pink accent-4 waves-effect waves-light js_link" href="/#contacts">Контакти</a>
+
+            <div class="header__main">
+                <div class="header__title">Студія спортивного бального танцю</div>
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <div class="header__phone">063-332-98-47</div>
+                        <div class="header__phone">093-767-02-24</div>
+                    </div>
+                    <div class="header__social">
+                        <a href="https://www.facebook.com/BousDanceClub/" target="_blank" class="header__social-link">
+                            <img src="/img/social/facebook.svg" class="header__icon">
+                        </a>
+                        <a href="https://www.instagram.com/academy_dancesport_studio/" target="_blank" class="header__social-link">
+                            <img src="/img/social/instagram.svg" class="header__icon">
+                        </a>
                     </div>
                 </div>
-                <div class="header__image-block">
-                    <a href="index.html">
+                <div class="header__content">
+                    <ul class="center header__menu">
+                        <li class="header__item">
+                            <a id="mainLink" class="btn pink accent-4 waves-effect waves-light js_link header__link" href="/#main">Головна</a>
+                        </li>
+                        <li class="header__item">
+                            <a id="coachesLink" class="btn pink accent-4 waves-effect waves-light js_link header__link" href="/#coaches">Тренери</a>
+                        </li>
+                        <li class="header__item">
+                            <a id="timetableLink" class="btn pink accent-4 waves-effect waves-light js_link header__link" href="/#timetable">Розклад</a>
+                        </li>
+                        <li class="header__item">
+                            <a id="contactsLink" class="btn pink accent-4 waves-effect waves-light js_link header__link" href="/#contacts">Контакти</a>
+                        </li>
+                    </ul>
+                    <div class="header__logo">
                         <img src="/img/main-logo.jpg" class="header__image">
-                    </a>
+                    </div>
                 </div>
             </div>
-            <div class="col s2 header__block">
-                <div class="header__image-block">
-                    <img src="/img/club.png" class="header__image">
-                    <div>телефон рецепшна</div>
+
+            <div class="header__info">
+                <div class="header__school">
+                    <div class="header__image-block">
+                        <img src="/img/club.png" class="header__image">
+                    </div>
+                    <div>вул. Івана Кудрі, 7</div>
+                    <div>ЖК "Central Park"</div>
+                    <div>Дитячий клуб "Академія А+"</div>
+                    <div>(044) 339-93-63</div>
+                </div>
+                <div class="header__world-dance">
+                    <a href="https://www.worlddancesport.org/" target="_blank" class="header__fed-link">
+                        <img src="/img/WDSF-logo.jpg" class="header__image">
+                    </a>
                 </div>
             </div>
         </div>
@@ -53,12 +97,11 @@
         <img src="/img/collage.png" class="collage__image">
     </div>
 
-
     <!--MAIN-->
-    <div class="about container mb-30">
+    <div class="about container mb-30" id="main">
           <ul class="collapsible">
               <li>
-                  <div class="collapsible-header white-text">Про нашу студію танцю <i class="material-icons">arrow_downward</i></div>
+                  <div class="collapsible-header white-text">Про нашу студію детальніше ...<i class="material-icons collapsible__icon">arrow_downward</i></div>
                   <div class="collapsible-body">
                       <div class="about__section">
                           <h4>Хто ми?</h4>
@@ -108,6 +151,18 @@
                     <div class="trends__button js_btn" data-hide-text="Приховати" data-for="js_details--1">Детальніше</div>
                 </div>
 
+                <div class="trends__item" id="js_details--3">
+                    <div class="trends__content">
+                        <div class="trends__image-block trends__image-block--3">
+                            <!--<img src="/img/dance-sport-photo.png" class="trends__image">-->
+                        </div>
+                        <div class="trends__wrapper">
+                            <div class="trends__text"><strong>DANCE SPORT</strong> – групи для спортсменів (для дітей, які беруть участь у змаганнях, зборах, концертах). Програма підготовки включає в себе комплексний підхід тренувань, індивідуальних занять, тренувальних зборів для участі у змаганнях. Усі учні даних груп є спортсменами ВФТС, що дає можливість заробляти рейтингові бали для підвищення офіційного класу спортсмена та отримання спортивних розрядів.</div>
+                        </div>
+                    </div>
+                    <div class="trends__button js_btn" data-hide-text="Приховати" data-for="js_details--3">Детальніше</div>
+                </div>
+
                 <div class="trends__item" id="js_details--2">
                     <div class="trends__content">
                         <div class="trends__image-block trends__image-block--2">
@@ -128,18 +183,6 @@
                     </div>
                     <div class="trends__button js_btn" data-hide-text="Приховати" data-for="js_details--2">Детальніше</div>
                 </div>
-
-                <div class="trends__item" id="js_details--3">
-                    <div class="trends__content">
-                        <div class="trends__image-block trends__image-block--3">
-                            <!--<img src="/img/dance-sport-photo.png" class="trends__image">-->
-                        </div>
-                        <div class="trends__wrapper">
-                            <div class="trends__text"><strong>DANCE SPORT</strong> – групи для спортсменів (для дітей, які беруть участь у змаганнях, зборах, концертах). Програма підготовки включає в себе комплексний підхід тренувань, індивідуальних занять, тренувальних зборів для участі у змаганнях. Усі учні даних груп є спортсменами ВФТС, що дає можливість заробляти рейтингові бали для підвищення офіційного класу спортсмена та отримання спортивних розрядів.</div>
-                        </div>
-                    </div>
-                    <div class="trends__button js_btn" data-hide-text="Приховати" data-for="js_details--3">Детальніше</div>
-                </div>
             </div>
         </div>
     </div>
@@ -147,46 +190,49 @@
     <div class="section card-panel pink darken-4 coaches" id="coaches">
         <div class="container white-text mb-30">
             <h3 class="coaches__title">Тренери</h3>
-            <div class="coaches__item">
-                <div class="coaches__photos">
-                    <img class="responsive-img" src="/img/coaches/pidchenko.jpg" class="coaches">
+            <div class="coaches__block">
+                <div class="coaches__item">
+                    <div class="coaches__photos">
+                        <img class="responsive-img" src="/img/coaches/pidchenko.jpg" class="coaches">
+                        <!--<img class="responsive-img" src="/img/coaches/pidchenko2.jpg" class="coaches">-->
+                    </div>
+                    <div class="coaches__text">
+                        <div class="coaches__name">Підченко Віталій та Катерина - керівники студії "Academy Dance"</div>
+                        <ul>
+                            <li>- діюча професійна танцювальна пара</li>
+                            <li>- триразові чемпіони України в категорії "Професіонали Латина" (2016-2018 рр.)</li>
+                            <li>- спортсмени "S" класу (міжнародний клас)</li>
+                            <li>- переможці, призери та фіналісти міжнародних змагань в Україні та за кордоном</li>
+                            <li>- у 2018 році в офіційному рейтингу WDSF входять до TOP 25 кращих пар світу в категорії "Професіонали Латина".</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="coaches__text">
-                    <h5>Підченко Віталій та Катерина - керівники студії "Academy Dance"</h5>
-                    <ul>
-                        <li>- діюча професійна танцювальна пара</li>
-                        <li>- триразові чемпіони України в категорії "Професіонали Латина" (2016-2018 рр.)</li>
-                        <li>- спортсмени "S" класу (міжнародний клас)</li>
-                        <li>- переможці, призери та фіналісти міжнародних змагань в Україні та за кордоном</li>
-                        <li>- у 2018 році в офіційному рейтингу WDSF входять до TOP 25 кращих пар світу в категорії "Професіонали Латина".</li>
-                    </ul>
+                <div class="coaches__item">
+                    <div class="coaches__photos">
+                        <img class="responsive-img" src="/img/coaches/chepilevska.jpg" alt="">
+                        <img class="responsive-img" src="/img/coaches/chepilevska2.jpg" alt="">
+                    </div>
+                    <div class="coaches__text">
+                        <div class="coaches__name">Чепілевська Карина - викладач груп "Початківці" в Дитячому Клубі А+</div>
+                        <ul>
+                            <li>- кандидат в майстри спорту України з танцювального спорту</li>
+                            <li>- фіналістка Всеукраїнських та міжнародних змагань в Україні та за кордоном, півфіналістка Чемпіонату Світу серед Юніорів</li>
+                            <li>- член збірної України з танцювального спорту в категорії Дорослі</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="coaches__item">
-                <div class="coaches__photos">
-                    <img class="responsive-img" src="/img/coaches/chepilevska.jpg" alt="">
-                    <img class="responsive-img" src="/img/coaches/chepilevska2.jpg" alt="">
-                </div>
-                <div class="coaches__text">
-                    <h5>Чепілевська Карина - викладач груп "Початківці" в Дитячому Клубі А+</h5>
-                    <ul>
-                        <li>- кандидат в майстри спорту України з танцювального спорту</li>
-                        <li>- фіналістка Всеукраїнських та міжнародних змагань в Україні та за кордоном, півфіналістка Чемпіонату Світу серед Юніорів</li>
-                        <li>- член збірної України з танцювального спорту в категорії Дорослі</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="coaches__item">
-                <div class="coaches__photos">
-                    <img class="responsive-img" src="/img/coaches/nikolaenko.jpg" alt="">
-                    <img class="responsive-img" src="/img/coaches/nikolaenko2.jpg" alt="">
-                </div>
-                <div class="coaches__text">
-                    <h5>Николаєнко Олександр Сергійович - викладач груп "Початківці" в Академії Сучасної Освіти А+</h5>
-                    <ul>
-                        <li>- кандидат в майстри спорту України з танцювального спорту</li>
-                        <li>- фіналіст Всеукраїнських та міжнародних змагань в Україні та за кордоном</li>
-                    </ul>
+                <div class="coaches__item">
+                    <div class="coaches__photos">
+                        <img class="responsive-img" src="/img/coaches/nikolaenko.jpg" alt="">
+                        <img class="responsive-img" src="/img/coaches/nikolaenko2.jpg" alt="">
+                    </div>
+                    <div class="coaches__text">
+                        <div class="coaches__name">Николаєнко Олександр Сергійович - викладач груп "Початківці" в Академії Сучасної Освіти А+</div>
+                        <ul>
+                            <li>- кандидат в майстри спорту України з танцювального спорту</li>
+                            <li>- фіналіст Всеукраїнських та міжнародних змагань в Україні та за кордоном</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,12 +243,16 @@
         <div class="container">
             <div class="center">
                 <h3 class="timetable__title">Розклад групових занять у студії</h3>
+                <div class="timetable__image-block">
+                    <img src="/img/academy.png" class="timetable__image">
+                </div>
                 <h5>Академія Сучасної Освіти А+</h5>
                 <h5 class="mb-20">ЖК "Комфорт Таун", вул. Регенераторна 4в</h5>
             </div>
             <div>
-                <table class="striped responsive-table timetable__danceschool">
-                    <thead>
+                <div>
+                    <table class="striped responsive-table timetable__danceschool">
+                        <thead>
                         <tr>
                             <th></th>
                             <th>Понеділок</th>
@@ -211,9 +261,9 @@
                             <th>Четверг</th>
                             <th>П'ятниця</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
+                        </thead>
+                        <tbody>
+                        <tr class="fz-14">
                             <td>16:00-16:45</td>
                             <td></td>
                             <td>Початківці</td>
@@ -221,7 +271,7 @@
                             <td>Початківці</td>
                             <td></td>
                         </tr>
-                        <tr>
+                        <tr class="fz-14">
                             <td>
                                 <img src="/img/dance_school.png" class="timetable__img">
                             </td>
@@ -231,27 +281,27 @@
                             <td>з 4х років</td>
                             <td></td>
                         </tr>
-                    </tbody>
-                </table>
-                <div class="timetable__info mb-30">
-                    <p>*Індивідальні заняття за попередньою домовленістю з тренером</p>
-                    <p>тренер - Ніколаєнко Олександр</p>
+                        </tbody>
+                    </table>
+                    <div class="timetable__info mb-30">
+                        <p>*Індивідальні заняття за попередньою домовленістю з тренером</p>
+                        <p>тренер - Ніколаєнко Олександр</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <table class="striped responsive-table timetable__dancesport">
-                    <thead>
+                <div>
+                    <table class="striped responsive-table timetable__dancesport">
+                        <thead>
                         <tr>
                             <th></th>
-                                <th>Понеділок</th>
-                                <th>Вівторок</th>
-                                <th>Середа</th>
-                                <th>Четверг</th>
-                                <th>П'ятниця</th>
+                            <th>Понеділок</th>
+                            <th>Вівторок</th>
+                            <th>Середа</th>
+                            <th>Четверг</th>
+                            <th>П'ятниця</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
+                        </thead>
+                        <tbody>
+                        <tr class="fz-14">
                             <td>17:30-18:15</td>
                             <td></td>
                             <td>Мол. спорт група</td>
@@ -259,9 +309,9 @@
                             <td>Мол. спорт група</td>
                             <td>Мол. спорт група</td>
                         </tr>
-                        <tr>
+                        <tr class="fz-14">
                             <td>
-                                 <img src="/img/dance_sport.png" class="timetable__img">
+                                <img src="/img/dance_sport.png" class="timetable__img">
                             </td>
                             <td></td>
                             <td>з 7 років</td>
@@ -269,7 +319,7 @@
                             <td>з 7 років</td>
                             <td>з 7 років</td>
                         </tr>
-                        <tr>
+                        <tr class="fz-14">
                             <td>18:15-19:15</td>
                             <td></td>
                             <td>Мол. спорт група</td>
@@ -277,72 +327,76 @@
                             <td>Мол. спорт група</td>
                             <td>Мол. спорт група</td>
                         </tr>
-                        <tr>
+                        <tr class="fz-14">
                             <td>
-                                 <img src="/img/dance_sport.png" class="timetable__img">
+                                <img src="/img/dance_sport.png" class="timetable__img">
                             </td>
-                             <td></td>
+                            <td></td>
                             <td>з 7 років</td>
                             <td></td>
                             <td>з 7 років</td>
                             <td>з 7 років</td>
-                            </tr>
-                    </tbody>
-                </table>
-                <div class="timetable__info mb-30">
-                    <p>*Індивідальні заняття за попередньою домовленістю з тренером</p>
-                    <p>тренер - Ніколаєнко Олександр</p>
-                </div>
-                <div class="center">
-                    <h5>Дитячий клуб "Академія А+"</h5>
-                    <h5 class="mb-20">ЖК "Централ Парк", вул. Івана Кудрі, 7</h5>
-                 </div>
-                <div>
-                    <table class="striped responsive-table timetable__danceschool">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Понеділок</th>
-                                <th>Вівторок</th>
-                                <th>Середа</th>
-                                <th>Четверг</th>
-                                <th>П'ятниця</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>18:00-18:45</td>
-                                <td>Початківці</td>
-                                <td></td>
-                                <td>Початківці</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="/img/dance_school.png" class="timetable__img">
-                                </td>
-                                <td>з 4х років</td>
-                                <td></td>
-                                <td>з 4х років</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                        </tr>
                         </tbody>
                     </table>
                     <div class="timetable__info mb-30">
                         <p>*Індивідальні заняття за попередньою домовленістю з тренером</p>
-                        <p>тренер - Ніколаєнко Олександр</p>
+                        <p>тренери - Підченко Віталій та Катерина</p>
                     </div>
-                    </div>
-             </div>
+                </div>
+            </div>
+            <div>
+                <div class="timetable__image-block">
+                    <img src="/img/club.png" class="timetable__image">
+                </div>
+                <div class="center">
+                    <h5>Дитячий клуб "Академія А+"</h5>
+                    <h5 class="mb-20">ЖК "Централ Парк", вул. Івана Кудрі, 7</h5>
+                </div>
+                <table class="striped responsive-table timetable__danceschool">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Понеділок</th>
+                        <th>Вівторок</th>
+                        <th>Середа</th>
+                        <th>Четверг</th>
+                        <th>П'ятниця</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="fz-14">
+                        <td>18:00-18:45</td>
+                        <td>Початківці</td>
+                        <td></td>
+                        <td>Початківці</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="fz-14">
+                        <td>
+                            <img src="/img/dance_school.png" class="timetable__img">
+                        </td>
+                        <td>з 4х років</td>
+                        <td></td>
+                        <td>з 4х років</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="timetable__info mb-30">
+                    <p>*Індивідальні заняття за попередньою домовленістю з тренером</p>
+                    <p>тренер - Чепілевська Карина</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- CONTACTS -->
     <div class="section contacts mb-30 pink darken-4 white-text" id="contacts">
         <div class="container">
-            <h4 class="center contacts__title">Контакти</h4>
+            <h3 class="center contacts__title">Контакти</h3>
             <div class="row center">
                 <div class="map col s12 m6">
                     <div class="map__info mb-20">
@@ -394,6 +448,17 @@
 
     <!-- GALLERY -->
     <div class="section gallery container">
+        <div class="gallery__info">
+            <h3 class="gallery__title mb-30">Ми в соціальних мережах</h3>
+            <div class="gallery__social">
+                <a href="https://www.facebook.com/BousDanceClub/" target="_blank" class="gallery__link">
+                    <img src="/img/social/facebook.svg" class="gallery__icon">
+                </a>
+                <a href="https://www.instagram.com/academy_dancesport_studio/" target="_blank" class="gallery__link">
+                    <img src="/img/social/instagram.svg" class="gallery__icon">
+                </a>
+            </div>
+        </div>
         <div class="gallery__media"></div>
     </div>
 
