@@ -1,5 +1,10 @@
-import style from "../scss/main.scss"
-import { instagramContent } from "./instagram_api.js"
+import style from "../scss/main.scss";
+import { instagramContent } from "./instagramApi.js";
+import lozad from 'lozad'
+
+// lazy loading
+const observer = lozad();
+observer.observe();
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -81,5 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       el.addEventListener('click', function(){
         carouselInstance.next();
       });
-    })
+    });
+
+
 });

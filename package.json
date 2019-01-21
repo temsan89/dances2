@@ -26,6 +26,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "lozad": "^1.7.0",
     "materialize-css": "^1.0.0"
   }
 }
