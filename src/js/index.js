@@ -1,8 +1,9 @@
 import { instagramContent } from "./instagramApi.js";
 import lozad from 'lozad'
+import style from "../scss/main.scss"
 
 // import 'materialize-css';
-import 'materialize-css/dist/js/materialize.min';
+// import 'materialize-css/dist/js/materialize.min';
 
 // lazy loading
 const observer = lozad();
