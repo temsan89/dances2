@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --mode development ./src/js/index.js --open --output ./dist/main.js",
-    "build": "webpack --mode production ./src/js/index.js --output ./dist/main.js"
+    "build": "webpack --mode production ./src/js/index.js --output ./dist/main.js",
+    "copy": "copyfiles -f \"dist/*.*\" ./"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "babel-loader": "^8.0.5",
+    "copyfiles": "^2.1.0",
     "css-loader": "^2.1.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
