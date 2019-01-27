@@ -1,1 +1,52 @@
+.coaches {
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
+  &__block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 600px){
+      flex-basis: 45%;
+      margin-right: 20px;
+    }
+
+    @media screen and (min-width: 754px){
+      margin-bottom: 0;
+      flex-basis: 30%;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__list {
+    max-width: 650px;
+  }
+}

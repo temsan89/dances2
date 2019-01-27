@@ -1,0 +1,41 @@
+.collapsible {
+  width: 100%;
+  border: none;
+
+  &-header {
+    background-color: #880e4f !important;
+    border-bottom: none;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 600px){
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 500px){
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 430px){
+      font-size: 16px;
+    }
+  }
+
+  &-body {
+    border-bottom: none;
+  }
+
+  .material-icons {
+    font-size: 32px;
+
+    @media screen and (max-width: 430px){
+      font-size: 20px;
+    }
+  }
+
+  &__icon {
+    margin-left: 20px;
+  }
+}

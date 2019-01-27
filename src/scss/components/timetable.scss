@@ -1,0 +1,13 @@
+.timetable {
+  margin-bottom: 30px;
+
+  &__image-block {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

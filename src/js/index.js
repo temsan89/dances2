@@ -1,4 +1,12 @@
-import style from "../scss/main.scss"
+import { instagramContent } from "./instagramApi.js";
+import lozad from 'lozad'
+
+// import 'materialize-css';
+import 'materialize-css/dist/js/materialize.min';
+
+// lazy loading
+const observer = lozad();
+observer.observe();
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -24,9 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             opened = !opened;
         })
-
-
-
     });
 
     document.getElementById('up-button').addEventListener('click', scrollTop);
@@ -36,6 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
             top: 0
         });
     }
+
+    let collapsibleElems = document.querySelectorAll('.collapsible');
+    let collapsibleInstances = M.Collapsible.init(collapsibleElems);
 
     const links = [...document.querySelectorAll('.js_link')];
 
@@ -62,6 +70,17 @@ document.addEventListener('DOMContentLoaded', function () {
         return obj instanceof Element;
     }
 
-    var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems);
+    instagramContent();
+
+    const carouselElems = document.querySelectorAll('.carousel');
+    const carouselProps = {indicators: true,
+                          fullWidth: true}
+    M.Carousel.init(carouselElems, carouselProps)
+
+    carouselElems.forEach(el => {
+      let carouselInstance = M.Carousel.getInstance(el)
+      el.addEventListener('click', function(){
+        carouselInstance.next();
+      });
+    });
 });
