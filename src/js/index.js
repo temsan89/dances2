@@ -1,6 +1,8 @@
-import style from "../scss/main.scss";
 import { instagramContent } from "./instagramApi.js";
 import lozad from 'lozad'
+
+// import 'materialize-css';
+import 'materialize-css/dist/js/materialize.min';
 
 // lazy loading
 const observer = lozad();
@@ -30,9 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             opened = !opened;
         })
-
-
-
     });
 
     document.getElementById('up-button').addEventListener('click', scrollTop);
@@ -73,9 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     instagramContent();
 
-    const sidenavElems = document.querySelectorAll('.sidenav');
-    M.Sidenav.init(sidenavElems);
-
     const carouselElems = document.querySelectorAll('.carousel');
     const carouselProps = {indicators: true,
                           fullWidth: true}
@@ -87,6 +83,4 @@ document.addEventListener('DOMContentLoaded', function () {
         carouselInstance.next();
       });
     });
-
-
 });

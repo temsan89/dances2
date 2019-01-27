@@ -1,19 +1,9 @@
 .timetable {
-  &__img {
-    width: 100%;
-    max-width: 200px;
-  }
-
-  &__info {
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  margin-bottom: 30px;
 
   &__image-block {
     width: 100%;
-    max-width: 100px;
+    max-width: 650px;
     margin: 0 auto;
   }
 

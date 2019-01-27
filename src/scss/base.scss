@@ -47,14 +47,18 @@ body {
   font-size: 16px;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-between;
+.collage {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: block;
+
+  @media screen and (max-width: 600px){
+    display: none;
+  }
 
   &__image {
-    margin-bottom: 20px;
+    width: 100%;
   }
 }
 
@@ -72,6 +76,15 @@ body {
 }
 
 .gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 10px;
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
   &__info {
     display: flex;
     align-items: center;
@@ -96,6 +109,42 @@ body {
   }
 }
 
-.about {
+.about{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 50px;
+
+  @media screen and (max-width: 600px) {
+    padding-top: 0;
+  }
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    flex-basis: 45%;
+  }
+}
+
+.achievement {
+  &__container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+#first_map, #second_map {
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.title-media {
+  @media screen and (max-width: 426px) {
+    font-size: 34px;
+  }
 }
