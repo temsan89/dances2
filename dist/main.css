@@ -410,15 +410,15 @@ body {
   max-height: 300px;
   margin: 0 auto 15px auto; }
   .trends__image-block--1 {
-    background-image: url("./src/img/dance-school-photo.png");
+    background-image: url("./img/dance-school-photo.png");
     background-size: contain;
     background-repeat: no-repeat; }
   .trends__image-block--2 {
-    background-image: url("./src/img/social-dance-photo.png");
+    background-image: url("./img/social-dance-photo.png");
     background-size: contain;
     background-repeat: no-repeat; }
   .trends__image-block--3 {
-    background-image: url("./src/img/dance-sport-photo.png");
+    background-image: url("./img/dance-sport-photo.png");
     background-size: contain;
     background-repeat: no-repeat; }
 
